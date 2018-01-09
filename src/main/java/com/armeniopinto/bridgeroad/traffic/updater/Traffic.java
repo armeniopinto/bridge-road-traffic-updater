@@ -1,7 +1,7 @@
 /**
  * Traffic.java
  * 
- * Copyright (C) 2017 by Arménio Pinto.
+ * Copyright (C) 2017, 2018 by Arménio Pinto.
  * Please read LICENSE for the license details.
  */
 package com.armeniopinto.bridgeroad.traffic.updater;
@@ -13,7 +13,10 @@ import java.util.HashMap;
 /**
  * The possible traffic conditions.
  * 
+ * In 2018 Google changed the severity colours on their maps but maintained the old legend.
+ * 
  * @see https://maps.gstatic.com/tactile/layers/traffic-legend-20150511.png
+ * @see traffic-legend-20180109-custom.png
  * @author armenio.pinto
  */
 enum Traffic {
@@ -22,13 +25,13 @@ enum Traffic {
 
 	None(0, new int[] { 249, 249, 249 }, new int[] { 255, 255, 255 }),
 
-	Low(1, new int[] { 132, 202, 80 }),
+	Low(1, new int[] { 99, 214, 104 }),
 
-	Medium(2, new int[] { 240, 125, 2 }),
+	Medium(2, new int[] { 255, 151, 77 }),
 
-	Heavy(3, new int[] { 230, 0, 0 }),
+	Heavy(3, new int[] { 242, 60, 50 }),
 
-	VeryHeavy(4, new int[] { 158, 19, 19 });
+	VeryHeavy(4, new int[] { 129, 31, 31 });
 
 	private final int severity;
 

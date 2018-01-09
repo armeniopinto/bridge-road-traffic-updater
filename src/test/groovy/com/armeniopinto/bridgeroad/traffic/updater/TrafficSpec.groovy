@@ -19,7 +19,7 @@ import javax.imageio.ImageIO
  */
 class TrafficSpec extends Specification {
 
-	def final LEGEND_FILE = "traffic-legend-20150511.png"
+	def final LEGEND_FILE = "traffic-legend-20180109-custom.png"
 
 	def "traffic legend RGBA matches traffic conditions"() {
 		given: "the traffic legend"
